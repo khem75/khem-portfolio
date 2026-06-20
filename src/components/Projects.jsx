@@ -36,6 +36,46 @@ export default function Projects() {
       link: '#',
       github: '#',
     },
+    {
+      id: 5,
+      title: 'World Cup 2022 Dashboard',
+      description: 'A visual analytics report exploring teams, matches, results, and key performance trends from the 2022 FIFA World Cup.',
+      tags: ['Power BI', 'Data Visualization', 'Sports Analytics'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 6,
+      title: 'Bike Store Sales Dashboard',
+      description: 'An interactive sales report analyzing revenue, orders, products, customers, and store performance.',
+      tags: ['Power BI', 'SQL', 'Sales Analytics'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 7,
+      title: 'Coffee Store Sales Analysis',
+      description: 'A data analytics project uncovering product, revenue, time, and location-based trends in coffee store sales.',
+      tags: ['Excel', 'Data Cleaning', 'Sales Analytics'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 8,
+      title: 'Person Re-Identification',
+      description: 'A computer vision system designed to recognize and match the same person across different images or camera views.',
+      tags: ['Python', 'Computer Vision', 'Deep Learning'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 9,
+      title: 'Lung Cancer Detection',
+      description: 'A machine learning project developed to support early lung cancer detection through intelligent data classification.',
+      tags: ['Python', 'Machine Learning', 'Healthcare AI'],
+      link: '#',
+      github: '#',
+    },
   ]
 
   const containerVariants = {
@@ -67,7 +107,7 @@ export default function Projects() {
         viewport={{ once: true, margin: '-100px' }}
       >
         <motion.h2 variants={itemVariants} className="section-title">
-          Selected work
+          Projects that turn<br />data into decisions
         </motion.h2>
 
         <div className="projects-grid">
