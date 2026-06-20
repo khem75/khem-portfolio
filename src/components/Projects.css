@@ -87,7 +87,16 @@
   border: 1px solid rgba(0, 217, 255, 0.3);
 }
 
+.project-group { margin-top: 4.5rem; }
+.project-group + .project-group { padding-top: 4.5rem; border-top: 1px solid rgba(23, 23, 23, 0.12); }
+.project-group-heading { display: grid; grid-template-columns: auto minmax(220px, 1fr) minmax(280px, 1fr); align-items: center; gap: 1.25rem; }
+.project-group-heading > span { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #171717; border-radius: 50%; font-weight: 700; font-size: .75rem; }
+.project-group-heading h3 { margin: 0; color: #171717; font: 700 clamp(1.4rem, 3vw, 2rem) 'Manrope', sans-serif; letter-spacing: -.04em; }
+.project-group-heading p { margin: 0; color: #66645f; line-height: 1.6; }
+
 @media (max-width: 768px) {
+  .project-group-heading { grid-template-columns: auto 1fr; }
+  .project-group-heading p { grid-column: 1 / -1; }
   .projects {
     padding: 3rem 1.5rem;
   }

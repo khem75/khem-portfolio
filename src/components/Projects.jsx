@@ -97,6 +97,21 @@ export default function Projects() {
     },
   }
 
+  const projectGroups = [
+    {
+      number: '01',
+      title: 'Data Analytics Projects',
+      description: 'Dashboards and analysis that transform raw information into clear business insights.',
+      items: projects.filter((project) => [4, 5, 6, 7].includes(project.id)),
+    },
+    {
+      number: '02',
+      title: 'AI & Software Projects',
+      description: 'Intelligent systems and practical applications built to solve real-world problems.',
+      items: projects.filter((project) => ![4, 5, 6, 7].includes(project.id)),
+    },
+  ]
+
   return (
     <section id="projects" className="projects">
       <motion.div
@@ -110,34 +125,32 @@ export default function Projects() {
           Projects that turn<br />data into decisions
         </motion.h2>
 
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <motion.div
-              key={project.id}
-              className="project-card"
-              variants={itemVariants}
-              whileHover={{ translateY: -10 }}
-            >
-              <div className="project-header">
-                <h3>{project.title}</h3>
-                <div className="project-links">
-                  {project.link !== '#' && <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Live demo"><FiExternalLink /></a>}
-                  <a href="https://github.com/khem75" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile"><FiGithub /></a>
-                </div>
-              </div>
-
-              <p className="project-description">{project.description}</p>
-
-              <div className="project-tags">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {projectGroups.map((group) => (
+          <motion.div key={group.title} variants={itemVariants} className="project-group">
+            <div className="project-group-heading">
+              <span>{group.number}</span>
+              <h3>{group.title}</h3>
+              <p>{group.description}</p>
+            </div>
+            <div className="projects-grid">
+              {group.items.map((project) => (
+                <motion.div key={project.id} className="project-card" variants={itemVariants} whileHover={{ translateY: -10 }}>
+                  <div className="project-header">
+                    <h3>{project.title}</h3>
+                    <div className="project-links">
+                      {project.link !== '#' && <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Live demo"><FiExternalLink /></a>}
+                      <a href="https://github.com/khem75" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile"><FiGithub /></a>
+                    </div>
+                  </div>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-tags">
+                    {project.tags.map((tag) => <span key={tag} className="tag">{tag}</span>)}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </motion.div>
     </section>
   )
