@@ -183,6 +183,8 @@
 .hero::before { background:radial-gradient(circle,rgba(255,212,0,.22),transparent 68%); }
 .hero-eyebrow { color:#68645b; }.hero-eyebrow span { background:#ffd400; box-shadow:0 0 0 5px rgba(255,212,0,.18); }
 .hero-text h1 { -webkit-text-fill-color:#171717; color:#171717; }.hero-text h1 em { color:#d5aa00; }.hero-text .subtitle { color:#171717; }.hero-text .description { color:#66645f; }
+.hero-text h1 .hero-greeting { display:block; margin-bottom:.35em; font-size:.34em; line-height:1; letter-spacing:-.03em; font-weight:700; color:#171717; -webkit-text-fill-color:#171717; }
+.hero-text h1 em { display:block; }
 .hero-visual { overflow:visible; border:2px solid #171717; background:#ffd400; box-shadow:18px 18px 0 #171717; border-radius:34px; transform:rotate(2deg); }
 .hero-visual::after { border-color:rgba(23,23,23,.18); border-style:solid; border-radius:26px; }
 .data-card { position:absolute; z-index:3; display:flex; flex-direction:column; border:2px solid #171717; background:white; color:#171717; box-shadow:8px 8px 0 #171717; transform:rotate(-2deg); }

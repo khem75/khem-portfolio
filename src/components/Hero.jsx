@@ -32,21 +32,21 @@ export default function Hero() {
         animate="visible"
       >
         <motion.div variants={itemVariants} className="hero-text">
-          <p className="hero-eyebrow"><span /> BCA · AI & Data Science</p>
-          <h1>Hi, I’m <em>Khem Raj Joshi.</em></h1>
-          <p className="subtitle">Data Analyst · AI Explorer · Developer</p>
+          <p className="hero-eyebrow"><span /> BCA (AI & Data Science) · Graphic Era University</p>
+          <h1><span className="hero-greeting">Hello, I’m</span><em>Khem Raj Joshi.</em></h1>
+          <p className="subtitle">Aspiring Data Analyst & AI/ML Developer</p>
           <p className="description">
-            I turn raw data into clear insights and ambitious ideas into practical software solutions.
+            I’m a BCA student in Dehradun focused on Data Analytics, Artificial Intelligence, Machine Learning, and Full Stack Development. I build insightful dashboards and practical, data-driven software solutions.
           </p>
         </motion.div>
 
         <motion.div variants={itemVariants} className="hero-buttons">
           <a href="#projects" className="btn btn-primary">
-            View my projects
+            Explore my projects
             <FiArrowUpRight />
           </a>
           <a href="#contact" className="btn btn-secondary">
-            Get in Touch
+            Contact me
           </a>
         </motion.div>
       </motion.div>
