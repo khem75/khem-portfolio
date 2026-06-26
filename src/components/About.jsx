@@ -13,11 +13,16 @@ export default function About() {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
-      x: 0,
-      transition: { duration: 0.6 },
+      y: 0,
+      transition: {
+        type: 'spring',
+        stiffness: 45,
+        damping: 12,
+        duration: 0.8,
+      },
     },
   }
 

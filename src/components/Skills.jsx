@@ -1,32 +1,32 @@
 import { motion } from 'framer-motion'
 import {
-  FiCode,
-  FiDatabase,
-  FiTrendingUp,
-  FiLayout,
-} from 'react-icons/fi'
+  LuCode,
+  LuCpu,
+  LuWrench,
+  LuLayoutDashboard,
+} from 'react-icons/lu'
 import './Skills.css'
 
 export default function Skills() {
   const skillCategories = [
     {
       title: 'Data Analytics',
-      icon: FiLayout,
+      icon: LuLayoutDashboard,
       skills: ['SQL', 'MySQL', 'Power BI', 'Microsoft Excel', 'Data Visualization', 'Data Cleaning'],
     },
     {
       title: 'Programming',
-      icon: FiCode,
+      icon: LuCode,
       skills: ['Python', 'JavaScript', 'R Programming', 'HTML5', 'CSS3'],
     },
     {
       title: 'AI & Machine Learning',
-      icon: FiDatabase,
+      icon: LuCpu,
       skills: ['OpenCV', 'Scikit-Learn', 'Machine Learning', 'Computer Vision', 'Data Mining'],
     },
     {
       title: 'Tools & Technologies',
-      icon: FiTrendingUp,
+      icon: LuWrench,
       skills: ['Git', 'GitHub', 'VS Code', 'MySQL Workbench', 'Power BI Desktop', 'Jupyter Notebook'],
     },
   ]
@@ -42,11 +42,16 @@ export default function Skills() {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 },
+      transition: {
+        type: 'spring',
+        stiffness: 45,
+        damping: 12,
+        duration: 0.8,
+      },
     },
   }
 
@@ -71,7 +76,8 @@ export default function Skills() {
                 key={index}
                 className="skill-card"
                 variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ y: -10, scale: 1.03 }}
+                transition={{ type: 'spring', stiffness: 200, damping: 15 }}
               >
                 <div className="skill-icon">
                   <IconComponent size={32} />

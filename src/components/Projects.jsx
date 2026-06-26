@@ -113,11 +113,16 @@ export default function Projects() {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 },
+      transition: {
+        type: 'spring',
+        stiffness: 45,
+        damping: 12,
+        duration: 0.8,
+      },
     },
   }
 
@@ -158,7 +163,13 @@ export default function Projects() {
             </div>
             <div className="projects-grid">
               {group.items.map((project) => (
-                <motion.div key={project.id} className="project-card" variants={itemVariants} whileHover={{ translateY: -10 }}>
+                <motion.div
+                  key={project.id}
+                  className="project-card"
+                  variants={itemVariants}
+                  whileHover={{ y: -15, scale: 1.025 }}
+                  transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+                >
                   <div className="project-header">
                     <h3>{project.title}</h3>
                     <div className="project-links">

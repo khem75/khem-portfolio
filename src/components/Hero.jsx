@@ -1,8 +1,12 @@
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { FiArrowUpRight } from 'react-icons/fi'
 import './Hero.css'
 
 export default function Hero() {
+  const { scrollY } = useScroll()
+  const yParallax = useTransform(scrollY, [0, 800], [0, -180])
+  const opacityParallax = useTransform(scrollY, [0, 600], [0.15, 0])
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -25,6 +29,14 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero">
+      <motion.div 
+        className="hero-parallax-watermark" 
+        style={{ y: yParallax, opacity: opacityParallax }}
+        aria-hidden="true"
+      >
+        AI · DATA · ML
+      </motion.div>
+      
       <motion.div
         className="hero-content"
         variants={containerVariants}
