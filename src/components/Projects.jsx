@@ -140,6 +140,13 @@ export default function Projects() {
       items: projects.filter((project) => ![4, 5, 6, 7, 11, 12].includes(project.id)),
     },
   ]
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    e.currentTarget.style.setProperty('--mouse-x', `${x}px`)
+    e.currentTarget.style.setProperty('--mouse-y', `${y}px`)
+  }
 
   return (
     <section id="projects" className="projects">
@@ -169,6 +176,7 @@ export default function Projects() {
                   variants={itemVariants}
                   whileHover={{ y: -15, scale: 1.025 }}
                   transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+                  onMouseMove={handleMouseMove}
                 >
                   <div className="project-header">
                     <h3>{project.title}</h3>

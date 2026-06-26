@@ -51,16 +51,16 @@ export default function About() {
 
           <motion.div variants={itemVariants} className="about-stats">
             <div className="stat">
-              <h3>BCA</h3>
-              <p>AI & Data Science</p>
+              <h3>9+</h3>
+              <p>Systems Engineered</p>
             </div>
             <div className="stat">
-              <h3>GEU</h3>
-              <p>Graphic Era University</p>
+              <h3>3+ Core</h3>
+              <p>Toolkits (SQL, Power BI, Python)</p>
             </div>
             <div className="stat">
-              <h3>∞</h3>
-              <p>Always learning</p>
+              <h3>Frontend</h3>
+              <p>Responsive UI/UX Designs</p>
             </div>
           </motion.div>
         </div>

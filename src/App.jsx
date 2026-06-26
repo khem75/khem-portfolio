@@ -6,12 +6,14 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import BackgroundParticles from './components/BackgroundParticles'
+import InteractiveGlow from './components/InteractiveGlow'
 import './App.css'
 
 function App() {
   return (
     <>
       <BackgroundParticles />
+      <InteractiveGlow />
       <Navbar />
       <Hero />
       <About />

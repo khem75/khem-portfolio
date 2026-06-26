@@ -16,7 +16,7 @@ export default function Navbar() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <a href="#home" className="nav-logo">KRJ<span>.</span></a>
+        <a href="#home" className="nav-logo">KHEM R. JOSHI<span>.</span></a>
 
         <button
           className="menu-toggle"
