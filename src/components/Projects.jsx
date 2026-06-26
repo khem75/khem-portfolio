@@ -5,6 +5,14 @@ import './Projects.css'
 export default function Projects() {
   const projects = [
     {
+      id: 10,
+      title: 'NINE77 Streetwear Store',
+      description: 'A premium luxury e-commerce platform for streetwear in Nepal. Features WhatsApp ordering integration, smooth animations, and a dark cinematic aesthetic.',
+      tags: ['Next.js', 'React', 'TailwindCSS', 'WhatsApp Ordering'],
+      link: 'https://nine77-store.vercel.app',
+      github: 'https://github.com/khem75',
+    },
+    {
       id: 1,
       title: 'AI Chess Game Player',
       description: 'An intelligent chess engine using Minimax and Alpha-Beta Pruning for strategic decision-making.',
@@ -25,6 +33,22 @@ export default function Projects() {
       title: 'CPU Performance Monitor',
       description: 'A real-time monitoring application that analyzes CPU usage and system performance metrics.',
       tags: ['Python', 'System Metrics', 'Visualization'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 11,
+      title: 'HR Analytics Dashboard',
+      description: 'An interactive dashboard designed to track employee performance, turnover rate, and overall workforce demographics to aid strategic decision making.',
+      tags: ['Power BI', 'Excel', 'HR Analytics'],
+      link: '#',
+      github: '#',
+    },
+    {
+      id: 12,
+      title: 'Heart Disease Analysis Dashboard',
+      description: 'A diagnostic and exploratory data dashboard that analyzes health metrics to identify key indicators and patterns related to heart disease.',
+      tags: ['Python', 'Power BI', 'Healthcare Analytics'],
       link: '#',
       github: '#',
     },
@@ -102,13 +126,13 @@ export default function Projects() {
       number: '01',
       title: 'Data Analytics Projects',
       description: 'Dashboards and analysis that transform raw information into clear business insights.',
-      items: projects.filter((project) => [4, 5, 6, 7].includes(project.id)),
+      items: projects.filter((project) => [4, 5, 6, 7, 11, 12].includes(project.id)),
     },
     {
       number: '02',
       title: 'AI & Software Projects',
       description: 'Intelligent systems and practical applications built to solve real-world problems.',
-      items: projects.filter((project) => ![4, 5, 6, 7].includes(project.id)),
+      items: projects.filter((project) => ![4, 5, 6, 7, 11, 12].includes(project.id)),
     },
   ]
 
