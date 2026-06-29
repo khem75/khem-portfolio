@@ -113,7 +113,7 @@ export default function Projects() {
       title: 'Finance Pulse',
       description: 'A dynamic financial web application built with Python for tracking investments, managing personal finances, and real-time budgeting.',
       tags: ['Python', 'Web Application', 'Finance'],
-      link: 'https://finance-pulse-chi.vercel.app/',
+      link: 'https://myfinancemate.vercel.app/',
       github: 'https://github.com/khem75',
     },
   ]
