@@ -29,6 +29,14 @@ export default function Projects() {
       github: 'https://github.com/khem75',
     },
     {
+      id: 15,
+      title: 'Personal Portfolio',
+      description: 'A modern interactive developer portfolio showcasing software engineering projects, data analytics dashboards, and technical skills.',
+      tags: ['React', 'Vite', 'Framer Motion', 'Web Application'],
+      link: 'https://khemjoshi.tech/',
+      github: 'https://github.com/khem75',
+    },
+    {
       id: 1,
       title: 'AI Chess Game Player',
       description: 'An intelligent chess engine using Minimax and Alpha-Beta Pruning for strategic decision-making.',
