@@ -100,6 +100,22 @@ export default function Projects() {
       link: '#',
       github: '#',
     },
+    {
+      id: 13,
+      title: 'Trailverse Nepal',
+      description: 'An interactive trekking and outdoor adventure platform designed to explore trails, routes, and travel experiences across Nepal.',
+      tags: ['TypeScript', 'React', 'Web Application'],
+      link: '#',
+      github: 'https://github.com/khem75',
+    },
+    {
+      id: 14,
+      title: 'Finance Pulse',
+      description: 'A dynamic financial web application built with Python for tracking investments, managing personal finances, and real-time budgeting.',
+      tags: ['Python', 'Web Application', 'Finance'],
+      link: '#',
+      github: 'https://github.com/khem75',
+    },
   ]
 
   const containerVariants = {
@@ -182,7 +198,7 @@ export default function Projects() {
                     <h3>{project.title}</h3>
                     <div className="project-links">
                       {project.link !== '#' && <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label="Live demo"><FiExternalLink /></a>}
-                      <a href="https://github.com/khem75" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile"><FiGithub /></a>
+                      <a href={project.github !== '#' ? project.github : 'https://github.com/khem75'} target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile"><FiGithub /></a>
                     </div>
                   </div>
                   <p className="project-description">{project.description}</p>
