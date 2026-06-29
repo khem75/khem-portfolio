@@ -13,6 +13,22 @@ export default function Projects() {
       github: 'https://github.com/khem75',
     },
     {
+      id: 13,
+      title: 'Trailverse Nepal',
+      description: 'An interactive trekking and outdoor adventure platform designed to explore trails, routes, and travel experiences across Nepal.',
+      tags: ['TypeScript', 'React', 'Web Application'],
+      link: 'https://trailverse-nepal.vercel.app/',
+      github: 'https://github.com/khem75',
+    },
+    {
+      id: 14,
+      title: 'Finance Pulse',
+      description: 'A dynamic financial web application built with Python for tracking investments, managing personal finances, and real-time budgeting.',
+      tags: ['Python', 'Web Application', 'Finance'],
+      link: 'https://myfinancemate.vercel.app/',
+      github: 'https://github.com/khem75',
+    },
+    {
       id: 1,
       title: 'AI Chess Game Player',
       description: 'An intelligent chess engine using Minimax and Alpha-Beta Pruning for strategic decision-making.',
@@ -99,22 +115,6 @@ export default function Projects() {
       tags: ['Python', 'Machine Learning', 'Healthcare AI'],
       link: '#',
       github: '#',
-    },
-    {
-      id: 13,
-      title: 'Trailverse Nepal',
-      description: 'An interactive trekking and outdoor adventure platform designed to explore trails, routes, and travel experiences across Nepal.',
-      tags: ['TypeScript', 'React', 'Web Application'],
-      link: 'https://trailverse-nepal.vercel.app/',
-      github: 'https://github.com/khem75',
-    },
-    {
-      id: 14,
-      title: 'Finance Pulse',
-      description: 'A dynamic financial web application built with Python for tracking investments, managing personal finances, and real-time budgeting.',
-      tags: ['Python', 'Web Application', 'Finance'],
-      link: 'https://myfinancemate.vercel.app/',
-      github: 'https://github.com/khem75',
     },
   ]
 
