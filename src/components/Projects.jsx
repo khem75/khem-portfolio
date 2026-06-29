@@ -105,7 +105,7 @@ export default function Projects() {
       title: 'Trailverse Nepal',
       description: 'An interactive trekking and outdoor adventure platform designed to explore trails, routes, and travel experiences across Nepal.',
       tags: ['TypeScript', 'React', 'Web Application'],
-      link: '#',
+      link: 'https://trailverse-nepal.vercel.app/',
       github: 'https://github.com/khem75',
     },
     {
@@ -113,7 +113,7 @@ export default function Projects() {
       title: 'Finance Pulse',
       description: 'A dynamic financial web application built with Python for tracking investments, managing personal finances, and real-time budgeting.',
       tags: ['Python', 'Web Application', 'Finance'],
-      link: '#',
+      link: 'https://finance-pulse-chi.vercel.app/',
       github: 'https://github.com/khem75',
     },
   ]
